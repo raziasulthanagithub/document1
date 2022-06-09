@@ -7,4 +7,4 @@ This is training
 
 
 ![](document1/blob/main/github.PNG)
-![](document1/github.PNG)
+![](github.PNG)
