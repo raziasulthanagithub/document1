@@ -5,6 +5,4 @@ This is training
 * this is for non numbering bullet
 # Adding image
 
-
-![](document1/blob/main/github.PNG)
-![](github.PNG)
+![](test1/github.PNG)
