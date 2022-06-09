@@ -7,4 +7,4 @@ This is training
 
 
 
-![The San Juan Mountains are beautiful!](document1/github.PNG "San Juan Mountains")
+![](document1/github.PNG)
