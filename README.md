@@ -6,5 +6,5 @@ This is training
 # Adding image
 
 
-
+![](document1/blob/main/github.PNG)
 ![](document1/github.PNG)
