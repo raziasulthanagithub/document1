@@ -5,10 +5,12 @@
 * this is for non numbering bullet
 # Direcory structure
 ![](test1/github0.1.PNG)
-
+List of all the designs present
 ![](test1/github0.2.PNG)
-
+List of files present in one of the designs
 ![](test1/github0.3.PNG)
+contents of config.tcl file 
+![](test1/github0.4.PNG)
 
 # Design preparation
 * Once you are in run "docker"
