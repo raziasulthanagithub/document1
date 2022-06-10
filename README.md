@@ -32,3 +32,6 @@ Directory structure inside **runs**
 **config.tcl** file which tells us about all the environment variables settings used for this design
 ![](test1/github6.PNG)
 
+# Synthesis
+**run_synthesis** will start synthesizing the respective RTL file. Once it is completed we see message **sythesis was sucessful**
+* Files related to synthesis are present in **synthesis** folder in logs, reports, results directories.
