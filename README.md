@@ -11,7 +11,12 @@
 ![](test1/github0.3.PNG)
 
 # Design preparation
-* Once you are in 
+* Once you are in run "docker"
+* source  ./flow.tcl in interactive session
 ![](test1/github1.PNG)
+
+* Import all the packages required for flow
+![](test1/github2.PNG)
+
 
 # 
