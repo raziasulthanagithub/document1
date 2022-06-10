@@ -35,3 +35,5 @@ Directory structure inside **runs**
 # Synthesis
 **run_synthesis** will start synthesizing the respective RTL file. Once it is completed we see message **sythesis was sucessful**
 * Files related to synthesis are present in **synthesis** folder in logs, reports, results directories.
+# Floor plan
+## Utilization and aspect ratio
