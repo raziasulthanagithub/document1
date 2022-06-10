@@ -21,11 +21,14 @@ contents of config.tcl file
 
 ![](test1/github2.PNG)
 
+# Design setup stage
+**prep design <design_name>** 
 ![](test1/github3.PNG)
 
+In tihs step lefs are merged and **runs** folder is created
 ![](test1/github4.PNG)
-
+Directory structure inside **runs** 
 ![](test1/github5.PNG)
-
+**config.tcl** file which tells us about all the environment variables settings used for this design
 ![](test1/github6.PNG)
 
