@@ -21,5 +21,11 @@ contents of config.tcl file
 
 ![](test1/github2.PNG)
 
+![](test1/github3.PNG)
 
-p
+![](test1/github4.PNG)
+
+![](test1/github5.PNG)
+
+![](test1/github6.PNG)
+
