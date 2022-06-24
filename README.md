@@ -122,9 +122,38 @@ At this stage we have preplaced cells which are placed in floorplan stage. Place
 3. Optimize placement:
 In this step we decide where all we need buffers and repeaters so that signal reaches 
 
+**run_placement** is used in interactive session to run placement. Once it is completed a new def is created in results/placement directory
+
+using magic command to open def after placement
+
+![](test1/github_magic_placement.PNG)
+
+view of Layout after placement
+
+![](test1/github_placement.PNG)
+
+Zoom in view of layout after placement. Once placement is done we can see more standard cells, more pins compared to def file created after floorplan. Also we have power and ground nets, vias defined in this def which are not present in def created after floorplan.
+![](test1/github_placement_zoom.PNG)
 
 
+# runnning git clone 
+![](test1/github_gitclone.PNG)
 
+![](test1/github_magic_lauout_inverter.PNG)
+
+![](test1/github_magic_lauout_inverter1.PNG)
+
+![](test1/github_magic_lauout_inverter2.PNG)
+
+![](test1/github_extract_netlist.PNG)
+
+![](test1/github_extract_netlist1.PNG)
+
+![](test1/github_spice_file.PNG)
+
+![](test1/github_trans_graph.PNG)
+
+![](test1/
 # Bullet points
 1. this is for numbering bullet
 * this is for non numbering bullet
