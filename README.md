@@ -1,5 +1,15 @@
-# Introduction
+##### Table of Contents  
+[Headers](#headers)
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
+<a name="emphasis"/>
+## Introduction
 
+
+# Introduction
+# RTL to GDS flow 
+![](test1/githb_rtl_to_gds.PNG)
 # Bullet points
 1. this is for numbering bullet
 * this is for non numbering bullet
@@ -35,5 +45,21 @@ Directory structure inside **runs**
 # Synthesis
 **run_synthesis** will start synthesizing the respective RTL file. Once it is completed we see message **sythesis was sucessful**
 * Files related to synthesis are present in **synthesis** folder in logs, reports, results directories.
+##Getting Flop ratio
+flop ratio is n. of dff/ no. cells = 1613/ 14876 = 10.8%
+Add images of dff, total cells and synthesesis sucessfull
 # Floor plan
 ## Utilization and aspect ratio
+**run_floorplan** will perform florplan. Once floorplan is completed you can see results and there wiill be a def file generated. 
+add def area and image
+we use magic to view floorplan layout or def file. Open magic using following command
+## usage of magic tool
+Z-for zooming 
+S- for selection
+what in tckon window will show info about selected item
+add images of layout 
+
+
+
+
+
