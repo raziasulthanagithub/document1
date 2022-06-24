@@ -139,18 +139,26 @@ Zoom in view of layout after placement. Once placement is done we can see more s
 # runnning git clone 
 ![](test1/github_gitclone.PNG)
 
+magic command for viewing invertr layout
+
 ![](test1/github_magic_lauout_inverter.PNG)
 
+Inverter Layout viewed using magic
 ![](test1/github_magic_lauout_inverter1.PNG)
 
+
+Select any item on layout and then do **what** It wil give info about item. For eg: in below snapshot we can see nwell is selected.
 ![](test1/github_magic_lauout_inverter2.PNG)
 
+Once we have layout we can extract netlist using following command, and then convert it to spice. 
 ![](test1/github_extract_netlist.PNG)
 
 ![](test1/github_extract_netlist1.PNG)
 
+Spice file that is created. 
 ![](test1/github_spice_file.PNG)
 
+After generating spice file we include libs, voltage sources and then perform transient analysis. Following is the output of transient analysis. 
 ![](test1/github_trans_graph.PNG)
 
 ![](test1/
