@@ -206,9 +206,11 @@ Add following commands in openlane flow to make sure that we are adding custom l
   
     add_lefs -src $lefs
 
+![](test1/github_openlane_commands_to_add_lef.PNG)
 
-![](test1/github_include_new_cell1github_openlane_commands_to_add_lef.PNG)
+run_synthesis and check whther our custom cell is added or not. Following snapshot says 1554 instances of this cell are added. 
 
+![](test1/instances_of_custom_cell.PNG)
 
 
 
