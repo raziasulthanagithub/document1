@@ -216,7 +216,7 @@ zoomed snapshot of def file showing instances of custom cell.
 
 ![](test1/github_magic_layout_after_including_cell.PNG)
 
-# steps that can be done to fix slack
+# steps that can be done to fix slack at synthesis stage
 SYNTH_STRATEGY is the variable we can change which tries to optimize between Area and Slack. 
 SYNTH_SIZING which enables cell sizing
 
@@ -226,6 +226,7 @@ when SYNTH_STRATEGY AREA 0 and SYNTH_SIZING 0
 ![](test1/area1.PNG)
 
 ![](test1/slack1.PNG)
+
 when SYNTH_STRATEGY AREA 1 and SYNTH_SIZING 1 
 
 ![](test1/area2.PNG)
@@ -233,7 +234,11 @@ when SYNTH_STRATEGY AREA 1 and SYNTH_SIZING 1
 ![](test1/slack2.PNG)
 
 
+# Steps to confiure openSTA post synthesis timing analysis
 
+![](test1/pre_sta.PNG)
+
+![](test1/my_base_sdc.PNG) 
 
 
 
