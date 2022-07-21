@@ -188,7 +188,12 @@ After generating spice file we include libs, voltage sources and then perform tr
 
 ![](test1/github_trans_graph.PNG)
 
-# 
+# Creating LEF for a .mag file using Magic tool 
+
+Once we open respective mag file use command **lef write** to create LEF file 
+
+![](test1/github_creating_lef2.PNG)
+
 
 
 
