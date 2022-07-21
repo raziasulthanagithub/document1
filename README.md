@@ -233,12 +233,31 @@ when SYNTH_STRATEGY AREA 1 and SYNTH_SIZING 1
 
 ![](test1/slack2.PNG)
 
+# steps to run floorplan without errors
 
+   init_floorplan
+   place_io
+   global_placement_or
+   tap_decap_or
+   
+   
 # Steps to confiure openSTA post synthesis timing analysis
 
 ![](test1/pre_sta.PNG)
 
 ![](test1/my_base_sdc.PNG) 
+
+use command sta pre_sta.conf then we will see slack similar to what had obtained in run_synthesis. Based on the report we can understand what is causing this slack. 
+We can reduce slack by chaging maximun fanout by variable SYNTH_MAX_FANOUT. 
+We can reduce slack by upsizing buffer 
+
+slack after several such iterations has reduced to following
+
+![](test1/reduced_slack.PNG)
+
+
+
+
 
 
 
