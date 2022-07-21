@@ -113,6 +113,8 @@ Once we run this command we see following layout
 
 ![](test1/github_magic_layout_1.PNG)
 
+Visit http://opencircuitdesign.com/magic/index.html for more info on magic tool.
+
 
 # Placement
 1.	Bind Netlist with physical cells:
@@ -155,7 +157,25 @@ Select any item on layout and then do **what** It wil give info about item. For 
 
 # Extracting spice netlist 
 
-Once we have layout we can extract netlist using following command, and then convert it to spice. 
+Once we have layout we can extract netlist using following commands, and then convert it to spice. 
+
+1.extract all
+
+extract command incrementally extracts the root cell and all its children into separate .ext files.
+
+2. ext2spice cthresh 0 rthresh 0 
+
+ext2spice command converts the hierarchical extracted netlist information produced by the extract command in a series of .ext files into a flattened representation in SPICE format, used for detailed analog simulation.
+
+**rthresh [value]**
+Set resistance threshold value. Lumped resistances below this value will not be written to the output. The value is in ohms, or may be the keyword infinite to prohibit writing any lumped resistances to the output.
+
+**cthresh [value]**
+Set capacitance threshold value. The value is in femtofarads, or may be the keyword infinite to prohibit writing any parasitic capacitances to the output.
+
+
+3. ext2spice
+
 ![](test1/github_extract_netlist.PNG)
 
 ![](test1/github_extract_netlist1.PNG)
@@ -168,10 +188,7 @@ After generating spice file we include libs, voltage sources and then perform tr
 
 ![](test1/github_trans_graph.PNG)
 
-![](test1/
-# Bullet points
-1. this is for numbering bullet
-* this is for non numbering bullet
+# 
 
 
 
