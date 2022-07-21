@@ -188,11 +188,24 @@ After generating spice file we include libs, voltage sources and then perform tr
 
 ![](test1/github_trans_graph.PNG)
 
-# Creating LEF for a .mag file using Magic tool 
+# Creating LEF for a custom cell using Magic tool 
 
 Once we open respective mag file use command **lef write** to create LEF file 
 
 ![](test1/github_creating_lef2.PNG)
+
+# Adding custom LEF in openlane flow
+
+Do following changes in config file to add custom lef file 
+
+![](test1/github_include_new_cell1.PNG)
+
+Add following commands in openlane flow to make sure that we are adding custom lef
+
+    set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+  
+    add_lefs -src $lefs
+
 
 
 
