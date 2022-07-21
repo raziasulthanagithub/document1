@@ -212,5 +212,7 @@ run_synthesis and check whther our custom cell is added or not. Following snapsh
 
 ![](test1/instances_of_custom_cell.PNG)
 
+zoomed snapshot of def file showing instances of custom cell. 
 
+![](test1/github_magic_layout_after_including_cell.PNG)
 
