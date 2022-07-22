@@ -255,6 +255,21 @@ slack after several such iterations has reduced to following
 
 ![](test1/reduced_slack.PNG)
 
+# Running CTS
+
+use **run_cts** command in openlane 
+In cts stage buffers get added, netlist will be modified. So a new <design_name_cts>.v file is seen in results/syntesis folder which has clock buffers now. raed_liberty 
+
+# gen_pdn
+
+![](test1/github_genpdn.PNG)
+
+
+![](test1/github_stdrails.PNG)
+
+
+
+
 
 
 
