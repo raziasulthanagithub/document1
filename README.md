@@ -265,6 +265,9 @@ In cts stage buffers get added, netlist will be modified. So a new <design_name_
 ![](test1/github_genpdn.PNG)
 
 
+![](test1/gen_pdn_output.PNG)
+
+
 ![](test1/github_stdrails.PNG)
 
 
