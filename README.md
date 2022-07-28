@@ -1,14 +1,37 @@
-##### Table of Contents  
-[Headers](#headers)
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
-<a name="emphasis"/>
 
-#Physical Design Workshop using openlane.
+# Physical Design Workshop using openlane.
 
 # Table of Contents
-- [Introduction to Openlane flow.](#introduction-to-openlane-flow)
+
+- [Introduction.](#introduction)
+- [RTL to GDS flow.](#rtl-to-gds-flow)
+   - [Synthesis.](#synthesis)
+   - [Floor Planning](#floor-planning)
+   - [Power Planning](#power-planning)
+   - [Placement](#placement)
+   - [Clock Tree Synthesis](#clock-tree-synthesis)
+   - [Routing](#routing)
+   - [SignOff](#signoff)
+- [OpenLane](#openlane) 
+- [Directory structure](#directory-structure)
+- [Design preparation](#design-preparation)
+- [Design setup stage](#design-setup-stage)
+- [Running Synthesis](#running-synthesis)
+  - [Flop ratio](#flop-ratio)
+- [Running Floor plan](#running-floor-plan)
+- [Few shortcuts for using magic tool](#few-shortcuts-for-using-magic-tool)
+- [Running Placement](#running-placement)
+- [Runnning git clone](#runnning-git-clone)
+- [Extracting spice netlist](#extracting-spice-netlist)
+- [Creating LEF for a custom cell using Magic tool](#creating-lef-for-a-custom-cell-using-magic-tool)
+- [Adding custom LEF in openlane flow](#adding-custom-lef-in-openlane-flow)
+- [Steps that can be done to fix slack at synthesis stage](#steps-that-can-be-done-to-fix-slack-at-synthesis-stage)
+- [Steps to run floorplan without errors](#steps-to-run-floorplan-without-errors)
+- [Steps to confiure openSTA post synthesis timing analysis](#steps-to-confiure-opensta-post-synthesis-timing-analysis)
+- [Running CTS](#running-cts)
+- [Running genpdn](#running-genpdn)
+- [Running Routing](#running-routing)
+
 
 # Introduction
 
@@ -36,7 +59,7 @@ Layout will be ready after routing stage. Some checks we have to perform soon af
 The purpose of this lab is to familiarise you with the efabless OpenLane VLSI design flow and the Skywater 130nm PDK. OpenLane is an open-source VLSI flow built around open-source tools. That is, it’s a collection of scripts that run these tools, in the right order, transforming their inputs and outputs as appropriate, and organising the results.
 ![](test1/github_openlane_asic_flow.PNG)
 
-# Direcory structure
+# Directory structure
 Following is the directory structure we have 
 ![](test1/github0.1.PNG)
 List of all the designs present
@@ -66,7 +89,7 @@ Directory structure inside **runs**
 **config.tcl** file which tells us about all the environment variables settings used for this design
 ![](test1/github6.PNG)
 
-# Synthesis
+# Running Synthesis
 **run_synthesis** in interactive session will start synthesizing the respective RTL file. Once it is completed we see message **sythesis was sucessful**. Files related to synthesis are present in **synthesis** folder in logs, reports, results directories.
 We get info like chip area, numer of different cells present in design from the yosys.log file
 
@@ -77,7 +100,7 @@ flop ratio is number of of dff and total number of cells in design i.e 1613/ 148
 ![](test1/github_dff.PNG)
 ![](test1/github_total_cells.PNG)
 
-# Floor plan
+# Running Floor plan
 Following are done in Floor plan
 1. Define width and height of core and Die: 
 Define the width and height of a core. 
@@ -107,7 +130,7 @@ We use magic tool to view floorplan layout or def file. Open magic using followi
 Once we run this command we see following layout
 ![](test1/github7.PNG)
 
-## few shortcuts for using magic tool
+# Few shortcuts for using magic tool
 1. Z-for zooming in
 2. ^Z-for Zooming out
 3. v- for Zoom Fit
@@ -119,7 +142,7 @@ Once we run this command we see following layout
 Visit http://opencircuitdesign.com/magic/index.html for more info on magic tool.
 
 
-# Placement
+# Running Placement
 1.	Bind Netlist with physical cells:
 We Select a particular shape for a logic gate from library. 
 3.	Placement:
@@ -141,7 +164,7 @@ Zoom in view of layout after placement. Once placement is done we can see more s
 ![](test1/github_placement_zoom.PNG)
 
 
-# runnning git clone 
+# Runnning git clone 
 How to build an inverter lef from scratch is described in following github page.
 https://github.com/nickson-jose/vsdstdcelldesign
 
@@ -219,7 +242,7 @@ zoomed snapshot of def file showing instances of custom cell.
 
 ![](test1/github_magic_layout_after_including_cell.PNG)
 
-# steps that can be done to fix slack at synthesis stage
+# Steps that can be done to fix slack at synthesis stage
 SYNTH_STRATEGY is the variable we can change which tries to optimize between Area and Slack. 
 SYNTH_SIZING which enables cell sizing
 
@@ -236,11 +259,14 @@ when SYNTH_STRATEGY AREA 1 and SYNTH_SIZING 1
 
 ![](test1/slack2.PNG)
 
-# steps to run floorplan without errors
+# Steps to run floorplan without errors
 
    init_floorplan
+   
    place_io
+   
    global_placement_or
+   
    tap_decap_or
    
    
@@ -263,7 +289,7 @@ slack after several such iterations has reduced to following
 use **run_cts** command in openlane 
 In cts stage buffers get added, netlist will be modified. So a new <design_name_cts>.v file is seen in results/syntesis folder which has clock buffers now. raed_liberty 
 
-# gen_pdn
+# Running genpdn
 
 ![](test1/github_genpdn.PNG)
 
@@ -274,7 +300,7 @@ In cts stage buffers get added, netlist will be modified. So a new <design_name_
 ![](test1/github_stdrails.PNG)
 
 
-# Routing
+# Running Routing
 **run_routing** command is used for routing purpose
 
 ![](test1/routing_output.PNG)
