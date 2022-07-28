@@ -276,9 +276,7 @@ In cts stage buffers get added, netlist will be modified. So a new <design_name_
 ![](test1/routing_output1.PNG)
 
 
-![](test1/def_After_routing.PNG)
-
-![](test1/zoomed_magic_after_routing.PNG)
+![](test1/magic_after_routing.PNG)
 
 ![](test1/zoomed_magic_after_routing.PNG)
 
