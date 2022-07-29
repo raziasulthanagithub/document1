@@ -290,6 +290,7 @@ use **run_cts** command in openlane
 In cts stage buffers get added, netlist will be modified. So a new <design_name_cts>.v file is seen in results/syntesis folder which has clock buffers now. raed_liberty 
 
 # Running genpdn
+**gen_pdn** will power distribution network. 
 
 ![](test1/github_genpdn.PNG)
 
@@ -301,12 +302,13 @@ In cts stage buffers get added, netlist will be modified. So a new <design_name_
 
 
 # Running Routing
-**run_routing** command is used for routing purpose
+**run_routing** command is used for routing purpose. 
 
 ![](test1/routing_output.PNG)
 
 ![](test1/routing_output1.PNG)
 
+viewing layout through magic after Routing is done
 
 ![](test1/magic_after_routing.PNG)
 
